@@ -42,14 +42,7 @@ from ultralytics import YOLO
 model = YOLO("yolov8n.pt")  # Using YOLOv8 nano version
 
 # Train the model on the dataset
-model.train(data="path/to/dataset.yaml", epochs=50, imgsz=640)
-```
-
-## Running Inference  
-To test the trained model:  
-```python
-results = model("path/to/test_image.jpg")  
-results.show()
+model.train(data="wet_wipe_dataset.yaml", epochs=50, imgsz=640)
 ```
 
 ## Results  
